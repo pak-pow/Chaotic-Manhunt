@@ -6,8 +6,8 @@
 # ====================================================
 
 # ── Give tracking compasses to all Hunters ────────────
-# Placed in the offhand slot; tracking/do_update refreshes the NBT each cycle.
-execute as @a[team=Hunter] run item replace entity @s weapon.offhand with minecraft:compass[minecraft:custom_name={"text":"▶ TRACKING RUNNER","color":"red","bold":true},minecraft:lodestone_tracker={tracked:false,pos:{X:0,Y:64,Z:0},dimension:"minecraft:overworld"}]
+# Placed in inventory; do_update will check if it's held before updating.
+execute as @a[team=Hunter] run give @s minecraft:compass[minecraft:custom_name={"text":"▶ TRACKING RUNNER","color":"red","bold":true},minecraft:custom_data={manhunt_tracker:1b},minecraft:lodestone_tracker={tracked:false,pos:{X:0,Y:64,Z:0},dimension:"minecraft:overworld"}]
 
 # ── Initialise Runner stats ───────────────────────────
 

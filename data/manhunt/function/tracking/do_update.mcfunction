@@ -41,9 +41,15 @@ execute if score $runner mh.dimension matches 0 if score $runner mh.prevdim matc
 
 # ── Update compass for each Hunter ───────────────────
 # If decoy ping is active, point to decoy storage instead.
+# Only updates the compass if the Hunter is actively holding it in either hand.
 
-execute if score $event mh.pulseactive matches 0 if score $decoy mh.decoyactive matches 0 as @a[team=Hunter] run function manhunt:tracking/update_compass with storage manhunt:tracking
-execute if score $event mh.pulseactive matches 0 if score $decoy mh.decoyactive matches 1 as @a[team=Hunter] run function manhunt:tracking/update_compass_decoy with storage manhunt:decoy
+# Normal ping
+execute if score $event mh.pulseactive matches 0 if score $decoy mh.decoyactive matches 0 as @a[team=Hunter] if items entity @s weapon.mainhand minecraft:compass[minecraft:custom_data~{manhunt_tracker:1b}] run function manhunt:tracking/update_compass_mainhand with storage manhunt:tracking
+execute if score $event mh.pulseactive matches 0 if score $decoy mh.decoyactive matches 0 as @a[team=Hunter] if items entity @s weapon.offhand minecraft:compass[minecraft:custom_data~{manhunt_tracker:1b}] run function manhunt:tracking/update_compass_offhand with storage manhunt:tracking
+
+# Decoy ping
+execute if score $event mh.pulseactive matches 0 if score $decoy mh.decoyactive matches 1 as @a[team=Hunter] if items entity @s weapon.mainhand minecraft:compass[minecraft:custom_data~{manhunt_tracker:1b}] run function manhunt:tracking/update_compass_decoy_mainhand with storage manhunt:decoy
+execute if score $event mh.pulseactive matches 0 if score $decoy mh.decoyactive matches 1 as @a[team=Hunter] if items entity @s weapon.offhand minecraft:compass[minecraft:custom_data~{manhunt_tracker:1b}] run function manhunt:tracking/update_compass_decoy_offhand with storage manhunt:decoy
 
 # ── Health sidebar (only visible to Hunters) ──────────
 
