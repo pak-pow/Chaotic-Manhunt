@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "pack_format": 69,
+    "description": [
+      {"text":"⚔ ","color":"dark_red"},
+      {"text":"Chaos Manhunt","color":"gold","bold":true},
+      {"text":" | 1 Runner vs Hunters | Java 1.21.10","color":"gray"}
+    ]
+  }
+}

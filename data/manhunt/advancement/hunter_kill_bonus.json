@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "kill_hunter": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "team": "Hunter"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "manhunt:timer/kill_bonus_check"
+  }
+}
