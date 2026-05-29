@@ -6,7 +6,7 @@
 
 title @a title {"text":"☠ UNDEAD SURGE","color":"dark_green","bold":true}
 title @a subtitle {"text":"Zombies flood the Hunters!","color":"gray"}
-playsound minecraft:entity.zombie.ambient master @a 0 64 0 1 0.6
+execute as @a at @s run playsound minecraft:entity.zombie.ambient master @s ~ ~ ~ 1 0.6
 
 # Spawn 5 zombies at each Hunter's location
 execute as @a[team=Hunter] at @s run summon minecraft:zombie ~ ~ ~ {PersistenceRequired:1b}

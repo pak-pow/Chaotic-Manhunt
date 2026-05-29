@@ -19,8 +19,8 @@ title @a[team=Runner] title {"text":"LIFELINE USED","color":"green","bold":true}
 title @a[team=Runner] subtitle {"text":"First life restored!","color":"gray"}
 title @a[team=Hunter] actionbar {"text":"⚠ THE RUNNER USED A LIFELINE!","color":"dark_red","bold":true}
 
-playsound minecraft:entity.player.levelup master @a[team=Runner] 0 64 0 1 2.0
-playsound minecraft:entity.wither.ambient master @a[team=Hunter] 0 64 0 1 0.5
+execute as @a[team=Runner] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 2.0
+execute as @a[team=Hunter] at @s run playsound minecraft:entity.wither.ambient master @s ~ ~ ~ 1 0.5
 
 tellraw @a [{"text":"[MANHUNT] ","color":"dark_gray"},{"text":"⚠ The Runner has used their Lifeline and restored their first life!","color":"yellow","bold":true}]
 

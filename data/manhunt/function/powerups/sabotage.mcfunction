@@ -14,8 +14,8 @@ effect give @a[team=Runner] minecraft:slowness 10 1 true
 title @a[team=Runner] times 3 20 5
 title @a[team=Runner] title {"text":"⚡ SABOTAGED","color":"red","bold":true}
 title @a[team=Runner] subtitle {"text":"Slowness II for 10 seconds!","color":"gray"}
-playsound minecraft:entity.elder_guardian.curse master @a[team=Runner] 0 64 0 1 1.0
+execute as @a[team=Runner] at @s run playsound minecraft:entity.elder_guardian.curse master @s ~ ~ ~ 1 1.0
 
 # Announce to Hunters
 title @a[team=Hunter] actionbar {"text":"⚡ Sabotage deployed!","color":"gold","bold":true}
-playsound minecraft:block.note_block.pling master @s 0 64 0 1 1.5
+execute as @s at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.5

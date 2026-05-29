@@ -23,8 +23,8 @@ title @a title [{"text":""},{"selector":"@a[team=Runner,limit=1]","color":"gold"
 title @a subtitle {"text":"IS THE RUNNER","color":"yellow","italic":true}
 
 # Dramatic reveal sound
-playsound minecraft:block.note_block.chime master @a 0 64 0 1 1.5
-playsound minecraft:entity.lightning_bolt.thunder master @a 0 64 0 0.4 0.8
+execute as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1.5
+execute as @a at @s run playsound minecraft:entity.lightning_bolt.thunder master @s ~ ~ ~ 0.4 0.8
 
 # Wait 2 seconds then show personal role screens
 schedule function manhunt:pick_sequence/show_roles 40t

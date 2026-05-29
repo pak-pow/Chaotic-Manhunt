@@ -13,7 +13,7 @@ effect give @a[team=Runner] minecraft:glowing 60 0 true
 title @a[team=Hunter] times 5 40 10
 title @a[team=Hunter] title {"text":"TRUE SIGHT","color":"white","bold":true}
 title @a[team=Hunter] subtitle {"text":"Runner is visible through walls for 60s!","color":"gray"}
-playsound minecraft:entity.evoker.cast_spell master @a[team=Hunter] 0 64 0 1 1.5
+execute as @a[team=Hunter] at @s run playsound minecraft:entity.evoker.cast_spell master @s ~ ~ ~ 1 1.5
 
 title @a[team=Runner] actionbar {"text":"⚠ TRUE SIGHT — You are glowing! Hide!","color":"red","bold":true}
-playsound minecraft:entity.wither.ambient master @a[team=Runner] 0 64 0 0.7 0.5
+execute as @a[team=Runner] at @s run playsound minecraft:entity.wither.ambient master @s ~ ~ ~ 0.7 0.5

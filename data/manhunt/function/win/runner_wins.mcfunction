@@ -14,7 +14,7 @@ scoreboard players set $game mh.state 5
 
 # ── Win celebration ───────────────────────────────────
 
-playsound minecraft:ui.toast.challenge_complete master @a 0 64 0 1 1.0
+execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1.0
 
 title @a times 10 100 30
 title @a title {"text":"THE DRAGON IS DEAD","color":"green","bold":true}

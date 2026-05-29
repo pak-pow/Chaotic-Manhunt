@@ -6,7 +6,7 @@
 
 title @a title {"text":"🔥 HELLFIRE","color":"dark_red","bold":true}
 title @a subtitle {"text":"The world burns","color":"gray"}
-playsound minecraft:entity.blaze.shoot master @a 0 64 0 1 0.5
+execute as @a at @s run playsound minecraft:entity.blaze.shoot master @s ~ ~ ~ 1 0.5
 
 # Set everyone on fire for 4 seconds (80 ticks)
 execute as @a run data merge entity @s {Fire:80}

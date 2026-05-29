@@ -11,8 +11,8 @@ scoreboard players set $game mh.state 5
 
 # ── Win sequence ──────────────────────────────────────
 
-playsound minecraft:ambient.cave master @a 0 64 0 1 0.5
-playsound minecraft:entity.wither.ambient master @a 0 64 0 1 0.3
+execute as @a at @s run playsound minecraft:ambient.cave master @s ~ ~ ~ 1 0.5
+execute as @a at @s run playsound minecraft:entity.wither.ambient master @s ~ ~ ~ 1 0.3
 
 title @a times 10 100 30
 title @a title {"text":"TIME HAS RUN OUT","color":"dark_red","bold":true}

@@ -12,7 +12,7 @@ scoreboard players set $event mh.pulseactive 0
 
 # Reset event timer and pick a fresh threshold
 scoreboard players set $event mh.eventtimer 0
-scoreboard players random $event mh.threshold 9600 14400
+execute store result score $event mh.threshold run random value 9600..14400
 
 title @a actionbar {"text":"⏭ Event skipped by host","color":"yellow"}
 tellraw @a {"text":"[MANHUNT] Current event skipped.","color":"yellow"}

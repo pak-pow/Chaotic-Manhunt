@@ -15,7 +15,7 @@ title @a title {"text":"THE RUNNER IS ON THEIR LAST LIFE","color":"dark_red","bo
 title @a subtitle {"text":"One more kill ends the hunt.","color":"gray"}
 
 weather thunder
-playsound minecraft:entity.wither.spawn master @a 0 64 0 1 1.0
+execute as @a at @s run playsound minecraft:entity.wither.spawn master @s ~ ~ ~ 1 1.0
 
 tellraw @a [{"text":"[MANHUNT] ","color":"dark_gray"},{"text":"⚠ THE RUNNER IS ON THEIR LAST LIFE!","color":"dark_red","bold":true}]
 

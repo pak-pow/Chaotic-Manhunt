@@ -17,7 +17,7 @@ effect clear @a[team=Hunter] minecraft:blindness
 # ── Initialise event engine ───────────────────────────
 
 scoreboard players set $event mh.eventtimer 0
-scoreboard players random $event mh.threshold 9600 14400
+execute store result score $event mh.threshold run random value 9600..14400
 scoreboard players set $event mh.pulseactive 0
 
 # ── Initialise timer and dread clock ─────────────────
@@ -43,7 +43,7 @@ scoreboard players set $game mh.state 3
 title @a times 5 60 20
 title @a title {"text":"THE HUNT BEGINS","color":"red","bold":true}
 title @a subtitle {"text":"May chaos ensue.","color":"gray"}
-playsound minecraft:entity.ender_dragon.growl master @a 0 64 0 1 1.0
+execute as @a at @s run playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~ 1 1.0
 tellraw @a [{"text":"[MANHUNT] ","color":"dark_gray"},{"text":"The hunt has begun! ","color":"red","bold":true},{"text":"Runner has 45 minutes. Good luck.","color":"yellow"}]
 
 # Show health on sidebar for Hunters

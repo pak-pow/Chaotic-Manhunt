@@ -11,6 +11,6 @@ execute if score $event mh.eventtype matches 4 run title @a title {"text":"⚠ U
 execute if score $event mh.eventtype matches 5 run title @a title {"text":"⚠ HELLFIRE IN 3...","color":"yellow","bold":true}
 execute if score $event mh.eventtype matches 6 run title @a title {"text":"⚠ DIMENSION PULSE IN 3...","color":"yellow","bold":true}
 
-playsound minecraft:block.note_block.hat master @a 0 64 0 0.8 1.5
+execute as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.8 1.5
 
 schedule function manhunt:events/countdown_2 20t

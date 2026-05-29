@@ -6,7 +6,7 @@
 
 title @a title {"text":"🌑 BLACKOUT","color":"dark_gray","bold":true}
 title @a subtitle {"text":"Darkness falls for 15 seconds","color":"gray"}
-playsound minecraft:ambient.cave master @a 0 64 0 1 0.5
+execute as @a at @s run playsound minecraft:ambient.cave master @s ~ ~ ~ 1 0.5
 
 # Blindness for 15 seconds (300 ticks), amplifier 5, hide particles
 effect give @a minecraft:blindness 15 5 true

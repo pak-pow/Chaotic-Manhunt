@@ -11,7 +11,7 @@ scoreboard players set $game mh.state 5
 
 # ── Win sequence ──────────────────────────────────────
 
-playsound minecraft:entity.wither.spawn master @a 0 64 0 1 1.0
+execute as @a at @s run playsound minecraft:entity.wither.spawn master @s ~ ~ ~ 1 1.0
 
 title @a times 10 100 30
 title @a title {"text":"THE HUNT IS OVER","color":"dark_red","bold":true}

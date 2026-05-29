@@ -5,7 +5,7 @@
 # ====================================================
 
 title @a title {"text":"⚡ THUNDER SURGE","color":"yellow","bold":true}
-playsound minecraft:entity.lightning_bolt.thunder master @a 0 64 0 1 0.7
+execute as @a at @s run playsound minecraft:entity.lightning_bolt.thunder master @s ~ ~ ~ 1 0.7
 
 # Strike 3 random players with lightning
 execute as @a[sort=random,limit=1] at @s run summon minecraft:lightning_bolt ~ ~ ~

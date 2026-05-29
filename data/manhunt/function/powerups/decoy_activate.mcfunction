@@ -27,7 +27,7 @@ scoreboard players set $decoy mh.decoyduration 600
 title @s times 5 40 10
 title @s title {"text":"DECOY PING ACTIVE","color":"light_purple","bold":true}
 title @s subtitle {"text":"Compasses now point to a fake location for 30s","color":"gray"}
-playsound minecraft:entity.enderman.teleport master @s 0 64 0 1 0.5
-playsound minecraft:block.note_block.bass master @a[team=Hunter] 0 64 0 1 0.3
+execute as @s at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 1 0.5
+execute as @a[team=Hunter] at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.3
 
 tellraw @a[team=Hunter] {"text":"[TRACKER] Signal updated.","color":"red"}

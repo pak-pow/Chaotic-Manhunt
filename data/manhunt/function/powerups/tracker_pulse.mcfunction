@@ -15,4 +15,4 @@ tag @s add mh.pulsing
 title @s times 5 40 10
 title @s title {"text":"TRACKER PULSE","color":"blue","bold":true}
 title @s subtitle {"text":"Heartbeat sensor active for 20 seconds","color":"gray"}
-playsound minecraft:block.note_block.bass master @s 0 64 0 1 2.0
+execute as @s at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 2.0

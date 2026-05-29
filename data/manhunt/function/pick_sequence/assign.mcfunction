@@ -36,5 +36,5 @@ scoreboard players set $game mh.state 2
 title @a times 5 40 10
 title @a title {"text":"HEAD START: 60 SECONDS","color":"aqua","bold":true}
 title @a subtitle {"text":"Hunters are frozen. Runners — RUN!","color":"gray"}
-playsound minecraft:block.note_block.pling master @a 0 64 0 1 2.0
+execute as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2.0
 tellraw @a {"text":"[MANHUNT] 60 second head start! Hunters cannot move.","color":"aqua","bold":true}

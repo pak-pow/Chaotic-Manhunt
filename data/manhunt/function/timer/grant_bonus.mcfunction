@@ -15,6 +15,6 @@ scoreboard players add $runner mh.timer 12000
 title @a[team=Runner] times 5 40 10
 title @a[team=Runner] title {"text":"+10:00 ADDED!","color":"green","bold":true}
 title @a[team=Runner] subtitle {"text":"A Hunter has been eliminated","color":"gray"}
-playsound minecraft:entity.player.levelup master @a[team=Runner] 0 64 0 1 1.0
+execute as @a[team=Runner] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1.0
 
 tellraw @a [{"text":"[MANHUNT] ","color":"dark_gray"},{"text":"Runner eliminated a Hunter — +10 minutes added to the clock!","color":"green","bold":true}]

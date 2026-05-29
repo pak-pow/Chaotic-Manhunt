@@ -6,7 +6,7 @@
 # ====================================================
 
 title @a title {"text":"☄ METEOR STRIKE","color":"dark_red","bold":true}
-playsound minecraft:entity.generic.explode master @a 0 64 0 1 0.5
+execute as @a at @s run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 1 0.5
 
 # Summon a charged creeper (ExplosionRadius:4) at Runner's last known position.
 # Fuse:0 detonates immediately. No fire (ignited:0 by default).

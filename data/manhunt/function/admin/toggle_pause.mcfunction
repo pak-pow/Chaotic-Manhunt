@@ -10,7 +10,7 @@ execute if score $game mh.state matches 3 run scoreboard players set $game mh.st
 execute if score $game mh.state matches 4 if score $game mh.state matches 4 run effect give @a minecraft:slowness 999999 255 true
 execute if score $game mh.state matches 4 run title @a title {"text":"⏸ PAUSED","color":"yellow","bold":true}
 execute if score $game mh.state matches 4 run title @a subtitle {"text":"Use /trigger manhunt_pause to resume","color":"gray"}
-execute if score $game mh.state matches 4 run playsound minecraft:block.note_block.bass master @a 0 64 0 1 0.5
+execute if score $game mh.state matches 4 as @a at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 0.5
 execute if score $game mh.state matches 4 run tellraw @a {"text":"[MANHUNT] Game paused.","color":"yellow"}
 
 # ── State 4 → 3 : Resume the game ────────────────────

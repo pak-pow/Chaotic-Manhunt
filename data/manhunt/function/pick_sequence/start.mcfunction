@@ -24,4 +24,4 @@ schedule function manhunt:pick_sequence/reveal 100t
 
 # Fanfare
 tellraw @a [{"text":"[","color":"dark_gray"},{"text":"CHAOS MANHUNT","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" Rolling for Runner...","color":"yellow"}]
-playsound minecraft:block.note_block.pling master @a 0 64 0 1 2.0
+execute as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2.0

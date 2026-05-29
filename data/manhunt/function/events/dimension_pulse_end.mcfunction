@@ -8,4 +8,4 @@ scoreboard players set $event mh.pulseactive 0
 
 title @a[team=Hunter] actionbar {"text":"◈ SIGNAL RESTORED","color":"blue","bold":true}
 tellraw @a[team=Hunter] {"text":"[TRACKER] Compass signal restored.","color":"blue"}
-playsound minecraft:block.note_block.pling master @a[team=Hunter] 0 64 0 1 2.0
+execute as @a[team=Hunter] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2.0

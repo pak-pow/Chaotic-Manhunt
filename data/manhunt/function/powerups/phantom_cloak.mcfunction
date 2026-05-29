@@ -13,4 +13,4 @@ effect give @s minecraft:invisibility 20 0 true
 title @s times 5 40 10
 title @s title {"text":"PHANTOM CLOAK","color":"aqua","bold":true}
 title @s subtitle {"text":"Invisible for 20 seconds","color":"gray"}
-playsound minecraft:entity.enderman.teleport master @s 0 64 0 1 0.8
+execute as @s at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 1 0.8
