@@ -41,6 +41,12 @@ scoreboard objectives add mh.health health "❤ Runner HP"
 # General constants pool for math operations
 scoreboard objectives add mh.const dummy "Constants"
 
+# Display and math temporary scores
+scoreboard objectives add mh.headsecs dummy "Headstart Secs"
+scoreboard objectives add mh.tmins dummy "Timer Mins"
+scoreboard objectives add mh.tsecs dummy "Timer Secs"
+scoreboard objectives add mh.tmp dummy "Temp Calc"
+
 # Pick sequence animation phase (1=fast roll, 2=slow roll)
 scoreboard objectives add mh.phase dummy "Pick Phase"
 
