@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 48,
+    "pack_format": 69,
     "description": [
       {"text":"⚔ ","color":"dark_red"},
       {"text":"Chaos Manhunt","color":"gold","bold":true},
