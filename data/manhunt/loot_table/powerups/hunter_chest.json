@@ -10,9 +10,12 @@
           "weight": 10,
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "name": {"text":"True Sight","color":"white","italic":false}
+            },
+            {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": "{\"text\":\"True Sight\",\"color\":\"white\",\"italic\":false}",
                 "minecraft:custom_data": { "manhunt_powerup": "true_sight" }
               }
             }
@@ -24,9 +27,12 @@
           "weight": 10,
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "name": {"text":"Tracker Pulse","color":"blue","italic":false}
+            },
+            {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": "{\"text\":\"Tracker Pulse\",\"color\":\"blue\",\"italic\":false}",
                 "minecraft:custom_data": { "manhunt_powerup": "tracker_pulse" }
               }
             }
@@ -38,9 +44,12 @@
           "weight": 10,
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "name": {"text":"Bloodlust","color":"dark_red","italic":false}
+            },
+            {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": "{\"text\":\"Bloodlust\",\"color\":\"dark_red\",\"italic\":false}",
                 "minecraft:custom_data": { "manhunt_powerup": "bloodlust" }
               }
             }
@@ -52,9 +61,12 @@
           "weight": 10,
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "name": {"text":"Sabotage","color":"gold","italic":false}
+            },
+            {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": "{\"text\":\"Sabotage\",\"color\":\"gold\",\"italic\":false}",
                 "minecraft:custom_data": { "manhunt_powerup": "sabotage" }
               }
             }

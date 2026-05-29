@@ -8,9 +8,9 @@
 # ── Read Runner position into scores ─────────────────
 # These scores ($rx/$ry/$rz) are also used by tracker_ping powerup.
 
-execute as @a[team=Runner,limit=1] store result score $rx mh.rx run data get entity @s Pos[0]
-execute as @a[team=Runner,limit=1] store result score $ry mh.ry run data get entity @s Pos[1]
-execute as @a[team=Runner,limit=1] store result score $rz mh.rz run data get entity @s Pos[2]
+execute as @a[team=Runner,limit=1] store result score @s mh.rx run data get entity @s Pos[0]
+execute as @a[team=Runner,limit=1] store result score @s mh.ry run data get entity @s Pos[1]
+execute as @a[team=Runner,limit=1] store result score @s mh.rz run data get entity @s Pos[2]
 
 # ── Write position to storage for macro compass update ──
 

@@ -10,9 +10,12 @@
           "weight": 10,
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "name": {"text":"Phantom Cloak","color":"aqua","italic":false}
+            },
+            {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": "{\"text\":\"Phantom Cloak\",\"color\":\"aqua\",\"italic\":false}",
                 "minecraft:custom_data": { "manhunt_powerup": "phantom_cloak" }
               }
             }
@@ -24,9 +27,12 @@
           "weight": 10,
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "name": {"text":"Dash","color":"yellow","italic":false}
+            },
+            {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": "{\"text\":\"Dash\",\"color\":\"yellow\",\"italic\":false}",
                 "minecraft:custom_data": { "manhunt_powerup": "dash" }
               }
             }
@@ -38,9 +44,12 @@
           "weight": 10,
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "name": {"text":"Decoy Ping","color":"light_purple","italic":false}
+            },
+            {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": "{\"text\":\"Decoy Ping\",\"color\":\"light_purple\",\"italic\":false}",
                 "minecraft:custom_data": { "manhunt_powerup": "decoy_ping" }
               }
             }
@@ -52,9 +61,12 @@
           "weight": 1,
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "name": {"text":"Lifeline","color":"red","italic":false}
+            },
+            {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": "{\"text\":\"Lifeline\",\"color\":\"red\",\"italic\":false}",
                 "minecraft:custom_data": { "manhunt_powerup": "lifeline" }
               }
             }
