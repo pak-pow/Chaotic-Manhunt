@@ -8,4 +8,4 @@
 #   $(FakeX) $(FakeY) $(FakeZ) $(FakeDim)
 # ====================================================
 
-$item replace entity @s weapon.offhand with minecraft:compass[minecraft:custom_name='{"text":"▶ TRACKING RUNNER","color":"red","bold":true}',minecraft:lodestone_tracker={tracked:false,pos:{X:$(FakeX),Y:$(FakeY),Z:$(FakeZ)},dimension:"$(FakeDim)"}]
+$item replace entity @s weapon.offhand with minecraft:compass[minecraft:custom_name={"text":"▶ TRACKING RUNNER","color":"red","bold":true},minecraft:lodestone_tracker={tracked:false,pos:{X:$(FakeX),Y:$(FakeY),Z:$(FakeZ)},dimension:"$(FakeDim)"}]

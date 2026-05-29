@@ -14,4 +14,4 @@
 # tracked:false means it works WITHOUT an actual lodestone block.
 # ====================================================
 
-$item replace entity @s weapon.offhand with minecraft:compass[minecraft:custom_name='{"text":"▶ TRACKING RUNNER","color":"red","bold":true}',minecraft:lodestone_tracker={tracked:false,pos:{X:$(RunnerX),Y:$(RunnerY),Z:$(RunnerZ)},dimension:"$(RunnerDim)"}]
+$item replace entity @s weapon.offhand with minecraft:compass[minecraft:custom_name={"text":"▶ TRACKING RUNNER","color":"red","bold":true},minecraft:lodestone_tracker={tracked:false,pos:{X:$(RunnerX),Y:$(RunnerY),Z:$(RunnerZ)},dimension:"$(RunnerDim)"}]
