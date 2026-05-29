@@ -20,5 +20,5 @@ title @s actionbar [{"text":"Respawning in ","color":"red"},{"score":{"name":"$p
 # When penalty reaches 0: restore and teleport
 execute if score @s mh.spectator matches ..0 run gamemode survival @s
 execute if score @s mh.spectator matches ..0 run function manhunt:tracking/tp_to_nearest_hunter
-execute if score @s mh.spectator matches ..0 unless items entity @s contents minecraft:compass[minecraft:custom_data~{manhunt_tracker:1b}] run give @s minecraft:compass[minecraft:custom_name={"text":"▶ TRACKING RUNNER","color":"red","bold":true},minecraft:custom_data={manhunt_tracker:1b},minecraft:lodestone_tracker={tracked:false,pos:{X:0,Y:64,Z:0},dimension:"minecraft:overworld"}]
+execute if score @s mh.spectator matches ..0 unless items entity @s contents minecraft:compass[minecraft:custom_data={manhunt_tracker:1b}] run give @s minecraft:compass[minecraft:custom_name={"text":"▶ TRACKING RUNNER","color":"red","bold":true},minecraft:custom_data={manhunt_tracker:1b},minecraft:lodestone_tracker={tracked:false,pos:{X:0,Y:64,Z:0},dimension:"minecraft:overworld"}]
 execute if score @s mh.spectator matches ..0 run title @s actionbar {"text":"Back in the hunt!","color":"green","bold":true}
