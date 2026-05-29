@@ -32,11 +32,11 @@ execute as @a[team=Hunter,tag=mh.pulsing,scores={mh.pulsecount=1..}] run functio
 scoreboard players remove @a[team=Hunter,tag=mh.pulsing] mh.pulsecount 1
 execute as @a[team=Hunter,tag=mh.pulsing,scores={mh.pulsecount=..0}] run tag @s remove mh.pulsing
 
-# ── Hunter powerup delivery (every 9000 ticks ≈ 7.5 min) ─
+# ── Hunter powerup delivery (every 450 ticks ≈ 7.5 min) ─
 
 scoreboard players add $powerup mh.deliverytick 1
-execute if score $powerup mh.deliverytick matches 9000.. run function manhunt:powerups/deliver_hunter_powerup
-execute if score $powerup mh.deliverytick matches 9000.. run scoreboard players set $powerup mh.deliverytick 0
+execute if score $powerup mh.deliverytick matches 450.. run function manhunt:powerups/deliver_hunter_powerup
+execute if score $powerup mh.deliverytick matches 450.. run scoreboard players set $powerup mh.deliverytick 0
 
 # ── Timeout check ─────────────────────────────────────
 

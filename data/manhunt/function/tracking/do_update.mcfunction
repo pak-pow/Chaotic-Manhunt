@@ -42,8 +42,8 @@ execute if score $runner mh.dimension matches 0 if score $runner mh.prevdim matc
 # ── Update compass for each Hunter ───────────────────
 # If decoy ping is active, point to decoy storage instead.
 
-execute if score $decoy mh.decoyactive matches 0 as @a[team=Hunter] run function manhunt:tracking/update_compass with storage manhunt:tracking
-execute if score $decoy mh.decoyactive matches 1 as @a[team=Hunter] run function manhunt:tracking/update_compass_decoy with storage manhunt:decoy
+execute if score $event mh.pulseactive matches 0 if score $decoy mh.decoyactive matches 0 as @a[team=Hunter] run function manhunt:tracking/update_compass with storage manhunt:tracking
+execute if score $event mh.pulseactive matches 0 if score $decoy mh.decoyactive matches 1 as @a[team=Hunter] run function manhunt:tracking/update_compass_decoy with storage manhunt:decoy
 
 # ── Health sidebar (only visible to Hunters) ──────────
 
