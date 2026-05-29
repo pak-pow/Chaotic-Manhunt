@@ -14,7 +14,8 @@ execute as @a at @s run playsound minecraft:block.portal.travel master @s ~ ~ ~ 
 scoreboard players set $event mh.pulseactive 1
 
 # Point Hunter compasses to a scrambled location (world spawn area)
-execute as @a[team=Hunter] run item replace entity @s weapon.offhand with minecraft:compass[minecraft:custom_name={"text":"◇ SIGNAL LOST","color":"gray","bold":true},minecraft:lodestone_tracker={tracked:false,pos:{X:0,Y:64,Z:0},dimension:"minecraft:overworld"}]
+execute as @a[team=Hunter] if items entity @s weapon.mainhand minecraft:compass[minecraft:custom_data={manhunt_tracker:1b}] run function manhunt:tracking/scramble_compass_mainhand
+execute as @a[team=Hunter] if items entity @s weapon.offhand minecraft:compass[minecraft:custom_data={manhunt_tracker:1b}] run function manhunt:tracking/scramble_compass_offhand
 
 title @a[team=Hunter] actionbar {"text":"◈ SIGNAL LOST — compass scrambled","color":"dark_gray","bold":true}
 tellraw @a [{"text":"[EVENT] ","color":"dark_gray"},{"text":"🌀 DIMENSION PULSE — Hunter compasses are scrambled for 30 seconds!","color":"blue"}]

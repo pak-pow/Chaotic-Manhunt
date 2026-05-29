@@ -10,3 +10,6 @@
 # so it auto-increments — we compare against mh.prevdeaths snapshot.
 
 execute as @a[team=Runner] if score @s mh.deathcount > @s mh.prevdeaths run function manhunt:lives/on_death
+
+# Check if Runner has respawned and apply immunity
+execute as @a[team=Runner,scores={mh.respawn_state=1}] if score @s mh.health matches 1.. run function manhunt:lives/apply_immunity

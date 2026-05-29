@@ -1,6 +1,6 @@
 # ====================================================
 # CHAOS MANHUNT — powerups/bloodlust.mcfunction
-# HUNTER powerup. ALL Hunters get Strength VI for 10s.
+# HUNTER powerup. ALL Hunters get Strength IV for 5s.
 # One-shot window — coordinate with your team!
 # ====================================================
 

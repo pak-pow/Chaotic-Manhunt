@@ -20,9 +20,5 @@ execute as @a at @s run playsound minecraft:entity.wither.spawn master @s ~ ~ ~ 
 tellraw @a [{"text":"[MANHUNT] ","color":"dark_gray"},{"text":"⚠ THE RUNNER IS ON THEIR LAST LIFE!","color":"dark_red","bold":true}]
 
 # ── Immunity on respawn ───────────────────────────────
-# Give 5 seconds (100 ticks) of resistance + brief blindness
-# to prevent spawn-killing on respawn.
-# These are applied now; they'll be active when they respawn.
-
-effect give @a[team=Runner] minecraft:resistance 5 255 true
-effect give @a[team=Runner] minecraft:blindness 3 0 true
+# Queue immunity effects to be applied the moment the Runner actually respawns.
+scoreboard players set @s mh.respawn_state 1

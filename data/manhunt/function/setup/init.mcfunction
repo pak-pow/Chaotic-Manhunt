@@ -106,6 +106,12 @@ scoreboard objectives add mh.deliverytick dummy "Delivery Tick"
 # Tracker Pulse: remaining pings countdown
 scoreboard objectives add mh.pulsecount dummy "Pulse Count"
 
+# Powerup selection type
+scoreboard objectives add mh.poweruptype dummy "Powerup Type"
+
+# Runner respawn tracking state
+scoreboard objectives add mh.respawn_state dummy "Respawn State"
+
 # ── Teams ─────────────────────────────────────────────
 
 team add Runner
@@ -132,7 +138,25 @@ scoreboard players set $dread mh.m35 0
 scoreboard players set $dread mh.m40 0
 scoreboard players set $runner mh.timer 54000
 
+# Hunter X/Y/Z integer block positions
+scoreboard objectives add mh.hx dummy "Hunter X"
+scoreboard objectives add mh.hy dummy "Hunter Y"
+scoreboard objectives add mh.hz dummy "Hunter Z"
+
+# Delta X/Y/Z differences
+scoreboard objectives add mh.dx dummy "Delta X"
+scoreboard objectives add mh.dy dummy "Delta Y"
+scoreboard objectives add mh.dz dummy "Delta Z"
+
+# Squaring differences and sum
+scoreboard objectives add mh.dx2 dummy "Delta X Sq"
+scoreboard objectives add mh.dy2 dummy "Delta Y Sq"
+scoreboard objectives add mh.dz2 dummy "Delta Z Sq"
+scoreboard objectives add mh.d2 dummy "Distance Sq"
+scoreboard objectives add mh.distance dummy "Distance"
+
 # Preset math constants used throughout the datapack
+scoreboard players set $c2 mh.const 2
 scoreboard players set $c20 mh.const 20
 scoreboard players set $c200 mh.const 200
 scoreboard players set $c1200 mh.const 1200

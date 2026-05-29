@@ -25,7 +25,7 @@ execute at @a[team=Runner,limit=1] run particle minecraft:firework_rocket ~ ~1 ~
 execute at @a[team=Runner,limit=1] run particle minecraft:firework_rocket ~ ~2 ~ 1 1 1 0.2 50 force
 
 # More fireworks spread around
-execute as @a[team=Runner,limit=1] at @s run summon minecraft:firework_rocket ~ ~2 ~ {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",components:{"minecraft:fireworks":{explosions:[{shape:2,colors:[I;16711680,65280,255],fade_colors:[I;16776960]}],flight_duration:1}}}}
+execute as @a[team=Runner,limit=1] at @s run summon minecraft:firework_rocket ~ ~2 ~ {LifeTime:20,item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",colors:[16711680,65280,255],fade_colors:[16776960]}],flight_duration:1}}}}
 
 tellraw @a [{"text":"","extra":[{"text":"=== ","color":"dark_gray"},{"text":"RUNNER WINS","color":"green","bold":true},{"text":" ===","color":"dark_gray"}]}]
 tellraw @a [{"text":"Runner: ","color":"green"},{"selector":"@a[team=Runner,limit=1]","color":"gold","bold":true},{"text":" slayed the Ender Dragon!","color":"green"}]

@@ -8,10 +8,11 @@ title @a title {"text":"🔥 HELLFIRE","color":"dark_red","bold":true}
 title @a subtitle {"text":"The world burns","color":"gray"}
 execute as @a at @s run playsound minecraft:entity.blaze.shoot master @s ~ ~ ~ 1 0.5
 
-# Set everyone on fire for 4 seconds (80 ticks)
-execute as @a run data merge entity @s {Fire:80}
+# Set everyone on fire safely by temporarily placing a fire block at their feet
+execute as @a at @s run setblock ~ ~ ~ minecraft:fire keep
+execute as @a at @s run setblock ~ ~ ~ minecraft:air replace minecraft:fire
 
-# Deal 4 damage (2 hearts) to all players
-execute as @a run damage @s 4 minecraft:generic
+# Deal 4 damage (2 hearts) to all players as fire damage
+execute as @a run damage @s 4 minecraft:on_fire
 
 tellraw @a [{"text":"[EVENT] ","color":"dark_gray"},{"text":"🔥 HELLFIRE — everyone takes 2 hearts of damage and burns!","color":"dark_red"}]

@@ -14,6 +14,9 @@ scoreboard players add $tracking mh.tracktick 1
 execute if score $tracking mh.tracktick >= $tracking mh.interval run function manhunt:tracking/do_update
 execute if score $tracking mh.tracktick >= $tracking mh.interval run scoreboard players set $tracking mh.tracktick 0
 
+# Run tick-based distance updates for compass tracking
+function manhunt:tracking/tick
+
 # ── Hunter death detection (every tick) ──────────────
 # Compare each Hunter's deathcount stat vs their stored snapshot.
 # If deathcount > prevdeaths, they died — process it.

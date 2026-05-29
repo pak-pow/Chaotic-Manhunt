@@ -7,7 +7,7 @@
 
 # ── Give tracking compasses to all Hunters ────────────
 # Placed in inventory; do_update will check if it's held before updating.
-execute as @a[team=Hunter] run give @s minecraft:compass[minecraft:custom_name={"text":"▶ TRACKING RUNNER","color":"red","bold":true},minecraft:custom_data={manhunt_tracker:1b},minecraft:lodestone_tracker={tracked:false,pos:{X:0,Y:64,Z:0},dimension:"minecraft:overworld"}]
+execute as @a[team=Hunter] run give @s minecraft:compass[minecraft:custom_name={"text":"▶ TRACKING RUNNER","color":"red","bold":true},minecraft:custom_data={manhunt_tracker:1b},minecraft:lodestone_tracker={target:{pos:[I;0,64,0],dimension:"minecraft:overworld"},tracked:false}]
 
 # ── Initialise Runner stats ───────────────────────────
 
