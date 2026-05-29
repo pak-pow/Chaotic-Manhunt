@@ -9,5 +9,5 @@
 scoreboard players operation @s mh.prevdeaths = @s mh.deathcount
 
 # Branch based on current lives remaining
-execute if score @s mh.lives matches 2 run function manhunt:lives/lose_life_1
 execute if score @s mh.lives matches 1 run function manhunt:win/hunters_win_death
+execute if score @s mh.lives matches 2 run function manhunt:lives/lose_life_1

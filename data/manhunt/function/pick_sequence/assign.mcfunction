@@ -17,7 +17,7 @@ scoreboard players set $game mh.realtime 0
 
 # ── Initialise tracking state ─────────────────────────
 
-scoreboard players set $tracking mh.interval 60
+scoreboard players set $tracking mh.interval 10
 scoreboard players set $tracking mh.tracktick 0
 scoreboard players set $runner mh.dimension 0
 scoreboard players set $runner mh.prevdim 0
