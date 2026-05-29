@@ -1,7 +1,7 @@
 # ====================================================
 # CHAOS MANHUNT — powerups/deliver_runner_powerup.mcfunction
 # Randomly selects and delivers a powerup to the Runner.
-# Called every 5 minutes by the main timer loop.
+# Called every 2.5 minutes by the main timer loop.
 # ====================================================
 
 # Roll a random powerup (1 to 4)

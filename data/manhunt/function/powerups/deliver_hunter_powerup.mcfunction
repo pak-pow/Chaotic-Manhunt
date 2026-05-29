@@ -1,6 +1,6 @@
 # ====================================================
 # CHAOS MANHUNT — powerups/deliver_hunter_powerup.mcfunction
-# Called every ~7.5 minutes (9000 ticks) from timer/do_tick.
+# Called every 2.5 minutes (150 seconds) from timer/do_tick.
 # Gives a random powerup to ALL Hunters simultaneously.
 # Uses scoreboard players random to pick the type.
 # ====================================================
